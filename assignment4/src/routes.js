@@ -25,8 +25,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   // function (on a service or controller) that retieves the required data,
   // once a state is reached.
   // there are a number of examples in the course docu on this
-  .state('categoriesList', {
-    url: '/categories-list',
+  .state('categories', {
+    url: '/categories',
     templateUrl: 'src/restaurant/templates/main-categorieslist.template.html',
     controller: 'MenuCategoriesController as menu',
   })
@@ -34,8 +34,8 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   //no need to subclass. we do not need any properties of the MenuCategoriesController
   //being injected into the ItemsListController
   //.state('categoriesList.itemList', {
-  .state('itemsList', {
-    url: '/categories-list/{shortName}',
+  .state('items', {
+    url: '/items/{shortName}',
     templateUrl: 'src/restaurant/templates/itemslist.template.html',
     controller: 'ItemsListController as itemsList',
     //required if no url is provided
