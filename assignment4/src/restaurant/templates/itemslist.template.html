@@ -1,0 +1,12 @@
+<a ui-sref="home">Home</a> &lt;
+  <span><a ui-sref="categoriesList">Categories</a></span> &lt;
+    <span><a ui-sref="itemsList({shortName: itemsList.categoryShortName})">{{itemsList.category}}</a></span>
+
+<!-- the code below could be encapsulated into a component-->
+<!-- here, we did this only for the categorieslist-->
+<h3>List of Menu Items for {{itemsList.category}}</h3>
+<ul>
+  <li ng-repeat="item in itemsList.items">
+    {{ item.name }}
+  </li>
+</ul>
