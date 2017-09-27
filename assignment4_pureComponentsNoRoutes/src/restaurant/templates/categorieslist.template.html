@@ -1,0 +1,8 @@
+  <h3>List of Menu Categories</h3>
+  <ul>
+    <!-- use with component controller li ng-repeat="category in $ctrl.categories"-->
+    <li ng-repeat="category in $ctrl.categories">
+      <a href="" ng-click="$ctrl.getMenuItems({index: category.short_name});">{{ category.name }}</a>
+      <!-- {{ category.short_name }} -->
+    </li>
+  </ul>

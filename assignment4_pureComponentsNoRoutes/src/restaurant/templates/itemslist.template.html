@@ -1,0 +1,7 @@
+  <h3>List of Menu Items for {{$ctrl.category}}</h3>
+  <ul>
+    <!-- use with component controller li ng-repeat="category in $ctrl.categories"-->
+    <li ng-repeat="item in $ctrl.items">
+      {{ item.name }}
+    </li>
+  </ul>
