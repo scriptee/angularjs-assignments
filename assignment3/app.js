@@ -42,7 +42,8 @@ function NarrowItDownController(MenuSearchService, MenuItemsListFactory) {
       console.log("Something went terribly wrong.");
     });
   };
-  search.removeItem = function (itemIndex) {
+  search.removeItem = function (itemIndexObj) {
+    var itemIndex = itemIndexObj.index;
     console.log("About to remove item: "+itemIndex);
     menuItemsList.removeItem(itemIndex);
   };
