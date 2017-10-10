@@ -1,0 +1,17 @@
+<div ng-if="!infoCtrl.user" class="container">
+  No personal information registerd.
+</div>
+<div ng-if="infoCtrl.user != null" class="container">
+  <p>
+    <div>First Name: {{infoCtrl.user.firstname}}</div>
+    <div>Last Name: {{infoCtrl.user.lastname}}</div>
+    <div>Email: {{infoCtrl.user.email}}</div>
+    <div>Phone: {{infoCtrl.user.phone}}</div>
+    <div>Fav Dish: {{infoCtrl.user.favorite}}</div>
+  </p>
+  <div class="menu-item-photo">
+    <img class="img-responsive" width="250" height="150" ng-src="{{infoCtrl.basePath}}/images/{{infoCtrl.menuItem.short_name}}.jpg" alt="{{infoCtrl.menuItem.name}}">
+  </div>
+  <div>{{infoCtrl.menuItem.name}}</div>
+  <div>{{infoCtrl.menuItem.description}}</div>
+</div>
