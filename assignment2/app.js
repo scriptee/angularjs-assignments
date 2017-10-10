@@ -28,8 +28,8 @@ function ShoppingListCheckOffService() {
   var service = this;
 
   // List of shopping items
-  var pn = ["apples", "bananas", "oranges"];
-  var pq = [1, 3, 4];
+  var pn = ["apples", "bananas", "oranges", "kiwi", "melon"];
+  var pq = [1, 3, 4, 2, 1];
   var items = [];
   var bItems = [];
 
